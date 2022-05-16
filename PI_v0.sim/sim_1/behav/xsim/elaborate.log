@@ -1,0 +1,30 @@
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 05147f7bd7354ebb9ccbbb7fba838cb0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Toplevel_tb_behav xil_defaultlib.Toplevel_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.FSM_processor [\FSM_processor(digits_max=10)\]
+Compiling architecture behavioral of entity xil_defaultlib.Counter_Prog [\Counter_Prog(nbbitsadr=8,length...]
+Compiling architecture behavioral of entity xil_defaultlib.Control_Unit [\Control_Unit(nbbitsadr=8,length...]
+Compiling architecture behavioral of entity xil_defaultlib.FSM_UT [\FSM_UT(length=33)\]
+Compiling architecture behavioral of entity xil_defaultlib.Registre_16bits [\Registre_16bits(nbbits=16)\]
+Compiling architecture behavioral of entity xil_defaultlib.coeffs [\coeffs(nbbits=16,length=33)\]
+Compiling architecture behavioral of entity xil_defaultlib.euclidean_divider [\euclidean_divider(nbbits=16)\]
+Compiling architecture behavioral of entity xil_defaultlib.adder [\adder(nbbits=16)\]
+Compiling architecture behavioral of entity xil_defaultlib.multi [\multi(nbbits=16)\]
+Compiling architecture behavioral of entity xil_defaultlib.Processing_Unit [\Processing_Unit(nbbits=16,lengt...]
+Compiling architecture behavioral of entity xil_defaultlib.RAM_SP_64_8 [\RAM_SP_64_8(nbbits=16,nbbitsadr...]
+Compiling architecture behavioral of entity xil_defaultlib.init_ram [\init_ram(nbbits=16,nbbitsadr=8,...]
+Compiling architecture behavioral of entity xil_defaultlib.Toplevel [\Toplevel(length=33,digits_max=1...]
+Compiling architecture bench of entity xil_defaultlib.toplevel_tb
+Built simulation snapshot Toplevel_tb_behav
