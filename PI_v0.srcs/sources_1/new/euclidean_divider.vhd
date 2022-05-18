@@ -62,9 +62,7 @@ process (current_state, start, remainder_temp, intdata_in2, done)
 process (current_state, remainder_temp, quotient_temp, intdata_in1, intdata_in2)
     begin
         case current_state is
-            when INIT   => quotient_temp   <= quotient_temp;
-                           remainder_temp  <= remainder_temp;
-                           done            <= '0';
+            when INIT   => done            <= '0';
             when SET    => quotient_temp   <= 0;
                            remainder_temp  <= intdata_in1;
                            done            <= '0';

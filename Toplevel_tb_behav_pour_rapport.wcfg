@@ -11,13 +11,13 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="2,504.001 ns"></ZoomEndTime>
-      <Cursor1Time time="316.000 ns"></Cursor1Time>
+      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="1,133.400001 us"></ZoomEndTime>
+      <Cursor1Time time="314.883031 us"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="162"></NameColumnWidth>
-      <ValueColumnWidth column_width="122"></ValueColumnWidth>
+      <ValueColumnWidth column_width="107"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="8" />
    <wvobject fp_name="/Toplevel_tb/uut/UT/clk" type="logic">
@@ -40,66 +40,13 @@
    <wvobject fp_name="group185" type="group">
       <obj_property name="label">UT</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="isExpanded"></obj_property>
-      <wvobject fp_name="group492" type="group">
-         <obj_property name="label">FSM_UT</obj_property>
-         <obj_property name="DisplayName">label</obj_property>
-         <wvobject fp_name="/Toplevel_tb/uut/UT/comp_FSM_UT/done_div" type="logic">
-            <obj_property name="ElementShortName">done_div</obj_property>
-            <obj_property name="ObjectShortName">done_div</obj_property>
-         </wvobject>
-         <wvobject fp_name="/Toplevel_tb/uut/UT/comp_FSM_UT/digit_calc" type="logic">
-            <obj_property name="ElementShortName">digit_calc</obj_property>
-            <obj_property name="ObjectShortName">digit_calc</obj_property>
-         </wvobject>
-         <wvobject fp_name="/Toplevel_tb/uut/UT/comp_FSM_UT/load_reg" type="logic">
-            <obj_property name="ElementShortName">load_reg</obj_property>
-            <obj_property name="ObjectShortName">load_reg</obj_property>
-         </wvobject>
-         <wvobject fp_name="/Toplevel_tb/uut/UT/comp_FSM_UT/enable_D" type="logic">
-            <obj_property name="ElementShortName">enable_D</obj_property>
-            <obj_property name="ObjectShortName">enable_D</obj_property>
-         </wvobject>
-         <wvobject fp_name="/Toplevel_tb/uut/UT/comp_FSM_UT/enable_U" type="logic">
-            <obj_property name="ElementShortName">enable_U</obj_property>
-            <obj_property name="ObjectShortName">enable_U</obj_property>
-         </wvobject>
-         <wvobject fp_name="/Toplevel_tb/uut/UT/comp_FSM_UT/save_val_ram" type="logic">
-            <obj_property name="ElementShortName">save_val_ram</obj_property>
-            <obj_property name="ObjectShortName">save_val_ram</obj_property>
-         </wvobject>
-         <wvobject fp_name="/Toplevel_tb/uut/UT/comp_FSM_UT/start_UT" type="logic">
-            <obj_property name="ElementShortName">start_UT</obj_property>
-            <obj_property name="ObjectShortName">start_UT</obj_property>
-         </wvobject>
-         <wvobject fp_name="/Toplevel_tb/uut/UT/comp_FSM_UT/done_UT" type="logic">
-            <obj_property name="ElementShortName">done_UT</obj_property>
-            <obj_property name="ObjectShortName">done_UT</obj_property>
-         </wvobject>
-         <wvobject fp_name="/Toplevel_tb/uut/UT/comp_FSM_UT/start_div" type="logic">
-            <obj_property name="ElementShortName">start_div</obj_property>
-            <obj_property name="ObjectShortName">start_div</obj_property>
-         </wvobject>
-         <wvobject fp_name="/Toplevel_tb/uut/UT/comp_FSM_UT/next_state" type="other">
-            <obj_property name="ElementShortName">next_state</obj_property>
-            <obj_property name="ObjectShortName">next_state</obj_property>
-            <obj_property name="CustomSignalColor">#00FF00</obj_property>
-            <obj_property name="UseCustomSignalColor">true</obj_property>
-         </wvobject>
-         <wvobject fp_name="/Toplevel_tb/uut/UT/comp_FSM_UT/load_R_carry" type="logic">
-            <obj_property name="ElementShortName">load_R_carry</obj_property>
-            <obj_property name="ObjectShortName">load_R_carry</obj_property>
-         </wvobject>
-         <wvobject fp_name="/Toplevel_tb/uut/UT/comp_FSM_UT/conf_first_l" type="logic">
-            <obj_property name="ElementShortName">conf_first_l</obj_property>
-            <obj_property name="ObjectShortName">conf_first_l</obj_property>
-         </wvobject>
-         <wvobject fp_name="/Toplevel_tb/uut/UT/comp_FSM_UT/current_state" type="other">
-            <obj_property name="ElementShortName">current_state</obj_property>
-            <obj_property name="ObjectShortName">current_state</obj_property>
-            <obj_property name="CustomSignalColor">#00FF00</obj_property>
-            <obj_property name="UseCustomSignalColor">true</obj_property>
-         </wvobject>
+      <wvobject fp_name="/Toplevel_tb/uut/UT/comp_FSM_UT/start_UT" type="logic">
+         <obj_property name="ElementShortName">start_UT</obj_property>
+         <obj_property name="ObjectShortName">start_UT</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Toplevel_tb/uut/UT/comp_FSM_UT/done_UT" type="logic">
+         <obj_property name="ElementShortName">done_UT</obj_property>
+         <obj_property name="ObjectShortName">done_UT</obj_property>
       </wvobject>
       <wvobject fp_name="/Toplevel_tb/uut/UT/value_in" type="array">
          <obj_property name="ElementShortName">value_in[15:0]</obj_property>
@@ -359,8 +306,8 @@
          <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
       <wvobject fp_name="/Toplevel_tb/uut/UM/mem" type="array">
-         <obj_property name="ElementShortName">mem[0:32][15:0]</obj_property>
-         <obj_property name="ObjectShortName">mem[0:32][15:0]</obj_property>
+         <obj_property name="ElementShortName">mem[0:105][15:0]</obj_property>
+         <obj_property name="ObjectShortName">mem[0:105][15:0]</obj_property>
          <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
    </wvobject>

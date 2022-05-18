@@ -10,7 +10,7 @@ entity Toplevel is
     Port ( clk          : in  std_logic;
            rst          : in  std_logic;
            UART_check   : in  std_logic;
-           digit        : out std_logic_vector ((Nbbits-1) downto 0);
+           digit        : out std_logic_vector ((NbBits-1) downto 0);
            enable_UART  : out std_logic);
 end Toplevel;
 
@@ -48,22 +48,11 @@ component Control_Unit is
 		   );
 end component;
 
-component Registre_16bits is
-    Generic(NbBits   : integer);
-    Port(   data_in  : in  std_logic_vector ((NbBits-1) downto 0);
-            clk      : in  std_logic;
-            rst      : in  std_logic;
-            load     : in  std_logic;
-            data_out : out  std_logic_vector ((NbBits-1) downto 0)
-            );
-end component;
-
 component Processing_Unit is
     Generic ( NbBits        : integer;
 			  length        : integer);
     Port(   clk         : in std_logic;
             rst         : in std_logic;
-            carry_in    : in std_logic_vector((NbBits-1) downto 0);
             value_in    : in std_logic_vector((NbBits-1) downto 0);
             start_UT    : in std_logic;
             
@@ -93,17 +82,15 @@ signal s_adr_ram        : std_logic_vector((NbBitsAdr-1)  downto 0);
 -- signaux UC
 signal s_enable_mem 	: std_logic;
 signal s_rw 		    : std_logic;
-signal s_enable_UART    : std_logic;
 signal s_adr_PC         : std_logic_vector((NbBitsAdr-1)  downto 0);
 signal s_config_ram_in  : std_logic;
+signal s_enable_UART_UT : std_logic;
 
 -- signaux UT
-signal s_carry_in       : std_logic_vector((NbBits-1) downto 0);
 signal s_start_UT       : std_logic;
 
 signal s_done_UT        : std_logic;
 signal s_carry_out      : std_logic_vector((NbBits-1) downto 0);
-signal s_value_out      : std_logic_vector((NbBits-1) downto 0);
 signal s_save_val_ram	: std_logic;
 
 -- signaux init_ram
@@ -130,7 +117,7 @@ Port map(   clk 				  => clk,
             config_ram_in         => s_config_ram_in,
 		    start 			      => s_start_UT,
             rw 		              => s_rw,
-            enable_UART           => s_enable_UART,
+            enable_UART           => enable_UART,
 		    adr_PC    		      => s_adr_PC
 		    );
           
@@ -139,13 +126,12 @@ Generic map(NbBits                => NbBits,
 		    length                => length)
 Port map(   clk                   => clk,
             rst                   => rst,
-            carry_in              => s_carry_in,
             value_in              => s_data_out_ram,
             start_UT              => s_start_UT,
                                   
             done_UT               => s_done_UT,
             carry_out             => s_carry_out,
-            value_out             => s_value_out,
+            value_out             => digit,
             save_val_ram          => s_save_val_ram
             );
         

@@ -7,7 +7,6 @@ entity Processing_Unit is
 			  length    : integer);
     Port(   clk         : in std_logic;
             rst         : in std_logic;
-            carry_in    : in std_logic_vector((NbBits-1) downto 0);
             value_in    : in std_logic_vector((NbBits-1) downto 0);
             start_UT    : in std_logic;
             
